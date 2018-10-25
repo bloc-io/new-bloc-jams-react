@@ -76,7 +76,7 @@ alt={this.state.album.title}/>
 onMouseEnter={() =>this.setState({isHovered: index+1})}
 onMouseLeave={() => this.setState({isHovered: false})}>
 <td className="song-actions">
-<button id="song-action-btns">{ 
+<button id="song-action-btns"> { 
 	(this.state.currentSong.title === song.title) ?
     <span className={this.state.isPlaying ? 
     "ion-pause" : "ion-play"}></span> :
@@ -86,7 +86,7 @@ onMouseLeave={() => this.setState({isHovered: false})}>
 </button>
 </td>
 
-<td><span className="ion-play"></span></td>
+
 
 <td className="song-number">{index+1}</td>
 <td className="song-title">{song.title}</td>
